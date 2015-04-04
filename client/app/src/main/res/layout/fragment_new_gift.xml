@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.coursera.androidcapstone.potlatch.activities.NewGiftFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:id="@+id/ivPhoto"
+        android:src="@drawable/camera64"
+        android:clickable="true"
+        android:contentDescription="Gift photo"
+        android:layout_alignParentTop="true"
+        android:padding="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTitle"
+        android:layout_alignLeft="@+id/ivPhoto"
+        android:layout_alignStart="@+id/ivPhoto"
+        android:layout_alignRight="@+id/ivPhoto"
+        android:layout_alignEnd="@+id/ivPhoto"
+        android:layout_below="@+id/ivPhoto"
+        android:hint="@string/new_gift_title" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etText"
+
+        android:layout_below="@+id/etTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/new_gift_description"
+        android:lines="4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="top" />
+    
+</RelativeLayout>

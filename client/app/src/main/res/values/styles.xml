@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!-- Color. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green_dark</item>
+        <item name="colorAccent">@color/green</item>
+
+        <item name="android:buttonStyle">@style/Widget.Button.Custom</item>
+    </style>
+
+    <!-- This is the custom button styles for this application -->
+    <style name="Widget.Button.Custom" parent="android:Widget.Button">
+        <item name="android:textColor">@color/green_darker</item>
+    </style>
+
+</resources>

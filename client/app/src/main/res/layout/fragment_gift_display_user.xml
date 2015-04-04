@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.coursera.androidcapstone.potlatch.activities.GiftDisplayActivity$PlaceholderFragment">
+
+    <ImageView
+        android:id="@+id/ivProfileDU"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:src="@drawable/admin" />
+
+    <TextView
+        android:id="@+id/tvUserDU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivProfileDU"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"
+        android:textSize="@dimen/abc_text_size_menu_material"
+        android:layout_alignStart="@id/ivProfileDU"
+        android:layout_alignEnd="@id/ivProfileDU"
+        android:gravity="center_horizontal"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etTitleDU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivProfileDU"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@id/ivProfileDU"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/etTextDU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/etTitleDU"
+        android:layout_alignEnd="@id/etTitleDU"
+        android:layout_below="@id/etTitleDU"
+        android:layout_toEndOf="@id/ivProfileDU"
+        android:hint="@string/user_detail_text_hint" />
+
+    <ImageView
+        android:id="@+id/ivObsceneDU"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/etTextDU"
+        android:padding="4dp"
+        android:src="@drawable/obscene_no" />
+
+    <TextView
+        android:id="@+id/tvTouchesDU"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignBottom="@id/ivObsceneDU"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@id/ivObsceneDU"
+        android:padding="4dp" />
+
+    <ImageView
+        android:id="@+id/ivTouchedDU"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignBottom="@id/ivObsceneDU"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@id/tvTouchesDU"
+        android:padding="4dp"
+        android:src="@drawable/touched_no" />
+
+    <org.coursera.androidcapstone.potlatch.views.AspectRatioImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivGiftImageDU"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:layout_below="@id/ivTouchedDU"
+        android:padding="4dp"
+        android:layout_marginTop="8dp"
+    />
+
+</RelativeLayout>

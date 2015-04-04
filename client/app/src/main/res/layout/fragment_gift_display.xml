@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.coursera.androidcapstone.potlatch.activities.GiftDisplayActivity$PlaceholderFragment">
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:src="@drawable/admin" />
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_below="@id/ivProfile"
+        android:paddingBottom="8dp"
+        android:textSize="@dimen/abc_text_size_menu_material"
+        android:layout_alignStart="@id/ivProfile"
+        android:layout_alignEnd="@id/ivProfile"
+        android:gravity="center_horizontal"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivProfile"
+        android:layout_toEndOf="@id/ivProfile"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/tvTitle"
+        android:layout_below="@id/tvTitle"
+        android:padding="8dp" />
+
+    <ImageView
+        android:id="@+id/ivObscene"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tvText"
+        android:padding="4dp"
+        android:src="@drawable/obscene_no" />
+
+    <TextView
+        android:id="@+id/tvTouches"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignBottom="@id/ivObscene"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@id/ivObscene"
+        android:padding="4dp" />
+
+    <ImageView
+        android:id="@+id/ivTouched"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignBottom="@id/ivObscene"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@id/tvTouches"
+        android:padding="4dp"
+        android:src="@drawable/touched_no" />
+
+
+    <org.coursera.androidcapstone.potlatch.views.AspectRatioImageView
+        android:id="@+id/ivGiftImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUser"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:padding="4dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop" />
+
+</RelativeLayout>

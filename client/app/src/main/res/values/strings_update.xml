@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="update_settings">Update options</string>
+    <string-array name="updateRate">
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>60 minutes</item>
+    </string-array>
+    <integer-array name="updateRateValue">
+        <item>1</item>
+        <item>5</item>
+        <item>60</item>
+    </integer-array>
+</resources>

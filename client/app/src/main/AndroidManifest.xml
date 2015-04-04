@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.coursera.androidcapstone.potlatch" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name=".activities.PotlatchApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.LoginScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.NewGiftActivity"
+            android:label="@string/title_activity_new_gift" >
+        </activity>
+        <activity
+            android:name=".activities.GiftDisplayActivity"
+            android:label="@string/title_activity_gift_display" >
+        </activity>
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+
+        <receiver
+            android:name=".receivers.AlarmReceiver"
+            android:process=":remote" >
+        </receiver>
+
+        <service
+            android:name=".services.UpdateService"
+            android:exported="false" />
+        <service
+            android:name=".services.UserListService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".services.GiftListService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".services.NewGiftService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".services.GiftDeleteService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".services.GiftUpdateService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".services.GiftTouchService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name=".services.GiftObsceneService"
+            android:exported="false" >
+        </service>
+    </application>
+
+</manifest>
