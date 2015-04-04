@@ -3,34 +3,35 @@ Potlatch
 
 This is my implementation of the Coursera "[Mobile Cloud Computing with Android](https://www.coursera.org/specialization/mobilecloudcomputing2/36?utm_medium=listingPage)" capstone project (2014).
 
-The initial requirement document and the final requirements (Basic and Functional requirements for final grading) are included in this folder.
-
-There are two separate folders containing the Server and Client implementations.
-
-
-Screencast (Initial submission)
+Requirements
 -----------------
-[Video](http://vimeo.com/113167420)
+###Basic:
+1. App supports multiple users via individual user accounts2. App contains at least one user facing function available only to authenticated users3. App comprises at least 1 instance of each of at least 2 of the following 4 fundamental Android components: 	+ Activity	+ BroadcastReceiver	+ Service	+ ContentProvider4. App interacts with at least one remotely-hosted Java Spring-based service5. App interacts over the network via HTTP6. App allows users to navigate between 3 or more user interface screens at runtime7. App uses at least one advanced capability or API from the following list (covered in the MoCCA Specialization): multimedia capture, multimedia playback, touch gestures, sensors, animation.8.  App supports at least one operation that is performed off the UI Thread in one or more background Threads of Thread pool.
+###Functional:1. App defines a Gift as a unit of data containing an image, a title, and optional accompanying text.2. A User can create a Gift by taking a picture (or optionally by selecting an image already stored on the device), entering a title, and optionally typing in accompanying text. 3. a. Once the Gift is complete the User can post the Gift to a Gift Chain (which is one or more related Gifts).    b. Gift data is stored to and retrieved from a web-based service accessible in the cloud.    c. The post operation used to store Gift data requires an authenticated user account4. Users can view Gifts that have been posted. 5. a. Users can do text searches for Gifts performed only on the Gift's title.    b. Gifts matching the search criterion are returned for user viewing.6. a. Users can indicate that they were touched by a Gift, at most once per Gift (i.e., double touching is not allowed)    b. Users can flag Gifts as being obscene or inappropriate. Users can set a preference that prevents the display of Gifts flagged as obscene or inappropriate.7. a. Touched counts are displayed with each Gift   b. Touched counts can be periodically updated in accordance with a user-specified preference (e.g., Touched counts are updated every 1, 5 or 60 minutes) or updated via push notifications for continuous updates.8. App can display information about the top “Gift givers,” i.e., those whose Gifts have touched the most people.
 
-
-Improvements (Since submission)
+Screencast
 -----------------
-1. Used IntentService
-2. Improved UI
-3. Uploaded to remote server - This is great to demostrate the implementation supports 
-	* OAuth2 
-	* HTTPs
-	* Multiple users
-	* Image upload/download
 
+###Initial submission: (10 minutes)
+[Video Link](http://vimeo.com/113167420)
 
-Screencast (On Nexus5)
------------------
-There is a 3-minute limit for the screen video capture. For "full functionalities", please refer to the screencast above.
+###Recently improved version: (3 minutes)
 
 ![screenshot](https://github.com/fengsterooni/potlatch/blob/master/potlatch.gif)
 
+Improvements since submission
+-----------------
+1. Used IntentService
+2. Improved UI
+3. Deployed to the cloud
 
+
+Further improvement ideas
+-----------------
+1. Implement Content Provider
+2. Further polish UI
+3. Use Database at Server side (Spring JPA)
+4. Add more features - user profile, pictures from photo gallery, geo location support, etc
 
 Develop Environment
 -----------------
